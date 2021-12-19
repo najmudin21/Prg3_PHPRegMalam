@@ -8,7 +8,7 @@ if (isset($_POST['save'])) {
     if ($query_edit) {
         header("location:view_barang.php");
     } else {
-        echo mysqli_error();
+        echo mysqli_error($koneksi);
     }
 }
 
