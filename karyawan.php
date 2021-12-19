@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Halaman Atasan</title>
+    <title>Halaman karyawan - www.malasngoding.com</title>
 </head>
 
 <body>
@@ -15,11 +15,15 @@
     }
 
     ?>
-    <h1>Halaman Atasan</h1>
+    <h1>Halaman karyawan</h1>
 
     <p>Halo <b><?php echo $_SESSION['username']; ?></b> Anda telah login sebagai <b><?php echo $_SESSION['level']; ?></b>.</p>
     <a href="logout.php">LOGOUT</a>
 
+    <br />
+    <br />
+
+    <a><a href="https://www.malasngoding.com/membuat-login-multi-user-level-dengan-php-dan-mysqli">Membuat Login Multi Level Dengan PHP</a> - www.malasngoding.com</a>
 </body>
 
 </html>
