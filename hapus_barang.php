@@ -4,5 +4,5 @@ $query_delete = mysqli_query($koneksi, "delete from barang where id_barang='" . 
 if ($query_delete) {
     header("location:view_barang.php");
 } else {
-    echo mysqli_error();
+    echo mysqli_error($koneksi);
 }

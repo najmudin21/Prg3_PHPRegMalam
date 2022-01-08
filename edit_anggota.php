@@ -9,7 +9,7 @@ if (isset($_POST['save'])) {
     if ($query_edit) {
         header("location:view_anggota.php");
     } else {
-        echo mysqli_error();
+        echo mysqli_error($koneksi);
     }
 }
 $tampil = mysqli_query($koneksi, "SELECT * from anggota where id_anggota='" . $_GET['id_anggota'] . "'");
